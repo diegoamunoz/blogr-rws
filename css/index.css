@@ -1,9 +1,11 @@
 html {
     font-size: 62.5%; }            
+     /**16px *0.625 = 10 px conversion en base 10*/
 
 body {
     background-color: antiquewhite;
-    font-size: 1.4 rem;       
+    font-size: 1.4 rem;  
+    /** 14px; */     
 }
 
 /*Mobile First 
@@ -18,13 +20,12 @@ Desktop first
 2. Las mediaqueries van atacar al siguiente dispositivo mas pequenio
 3. Las condiciones del media query deben atacar el ancho maximo (max-width)*/
 
-
-.header {
-    background-color: brown;
+.container {
+    border: 2px dotted blue;
+    max-width: 96vw;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-
-.footer {
-    background-color: brown;
-}
+/** Media queries */
 
