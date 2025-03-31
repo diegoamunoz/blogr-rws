@@ -12,7 +12,8 @@ html {
 body {
     background-color: antiquewhite;
     font-size: 1.4 rem;  
-    /** 14px; */     
+    /** 14px; */ 
+    font-family: Arial, sans-serif;
 }
 
 .main-container {
@@ -45,12 +46,71 @@ Desktop first
     box-sizing: border-box;
     padding: 0 8 px;
 }
-.contaniner-fluid {
+.container-fluid {
     border: 2px dotted orange;
     max-width: 100vh;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0;
+}
+
+.header {
+    background-color: #fe7f6c;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center ;
+    padding: 10px 50px;
+    position: relative;
+}
+
+nav h1 {
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: 12px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 12px;
+}
+
+.autenticar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.autenticar a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.autenticar button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 /** Media queries */
