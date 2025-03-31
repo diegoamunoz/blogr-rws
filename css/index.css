@@ -1,3 +1,12 @@
+:root {
+    /**colors*/
+    --SunsetOrange: #ff5c5f ;
+    --Jacarta: #3a3d5c;
+    --Gunmetal: #2d2e40;
+    /**fonts*/
+    --overall-fontsize: 62.5%;
+}
+
 html,
 body {
     height: 100%;
@@ -6,14 +15,12 @@ body {
 }
 
 html {
-    font-size: 62.5%; }            
+    font-size:var(--overall-fontsize) }            
      /**16px *0.625 = 10 px conversion en base 10*/
 
 body {
-    background-color: antiquewhite;
     font-size: 1.4 rem;  
     /** 14px; */ 
-    font-family: Arial, sans-serif;
 }
 
 .main-container {
@@ -22,11 +29,24 @@ body {
     flex-direction: column;
 }
 
+.header {
+    background-color: var(--SunsetOrange);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
 .main {
     flex-grow: 1;
     max-height: 100vh;
     height: 100vh;
 }
+
+.footer {
+    background-color: var(--Gunmetal);
+}
+
+
 /*Mobile First 
 1. Todo lo que esté fuera de un media query es css enfocado al movil 
 
@@ -52,13 +72,6 @@ Desktop first
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0;
-}
-
-.header {
-    background-color: #fe7f6c;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
 }
 
 nav {
