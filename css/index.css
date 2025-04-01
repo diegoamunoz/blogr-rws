@@ -29,23 +29,37 @@ body {
     flex-direction: column;
 }
 
+/**Header*/
+
 .header {
     background-color: var(--SunsetOrange);
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__right {
+    display: none;
+}
+
+
+/**Main*/
 .main {
     flex-grow: 1;
     max-height: 100vh;
     height: 100vh;
 }
 
+/**footer*/
+
 .footer {
     background-color: var(--Gunmetal);
 }
 
+/**Mediaqueries*/
 
 /*Mobile First 
 1. Todo lo que esté fuera de un media query es css enfocado al movil 
@@ -74,78 +88,30 @@ Desktop first
     padding: 0;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-start ;
-    align-items: center ;
-    padding: 10px 50px;
-    position: relative;
-}
-
-nav h1 {
-    font-size: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-    font-size: 12px;
-}
-
-nav ul li a {
-    text-decoration: none; 
-    color: white; 
-    font-size: 12px;
-}
-
-.autenticar {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.autenticar a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-}
-
-.autenticar button {
-    background: white;
-    color: black;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: bold;
-}
 
 /** Media queries */
-@media ( min-width: 56.7rem ) {
+@media ( min-width: 567px ) {
     .container {
         max-width: 56rem;
         padding: 0 1.6rem;
     }
 }
-@media ( min-width: 76.8rem ) {
+@media ( min-width: 768px ) {
     .container {
         max-width: 72rem;
         padding: 0 2.4rem;
     }
+    .navbar__right {
+        display: block;
+    }
 }
-@media (min-width: 99.2rem ) {
+@media (min-width: 992px ) {
     .container {
         max-width: 980px;
         padding: 0 3.2rem;
     }
 }
-@media (min-width: 120rem) {
+@media (min-width: 1200px ) {
         .container {
         max-width: 114rem;
         padding: 0 4rem;

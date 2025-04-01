@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog r</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -11,17 +12,27 @@
     <div class="main_container">
         <header class="header">
             <div class="container">
-                <nav>
-                    <h1>Blogr</h1>
-                    <ul> 
-                        <li><a id="link1" href="#">Product</a></li>
-                        <li><a id="link2" href="#">Company</a></li>
-                        <li><a id="link3" href="#">Conectar</a></li>
-                    </ul>
-                    <div class="autenticar">
-                        <a href="">Login</a>
-                        <button>Sign Up</button>
+                <nav class="navbar">
+                    <div class="navbar__left"><a href="#">BlogR</a></div>
+                    <div class="navbar__center">
+                        <ul class="menu-main">
+                            <li class="menu-item item item-1">
+                            <a class="menu-link link link-1" href="#">Product</a></li>
+                            <li class="menu-item item item-2">
+                                <a class="menu-link link link-2" href="#">Company</a></li>
+                            <li class="menu-item item item-3">
+                                <a class="menu-link link link-3" href="#">Connect</a></li>
+                        </ul>
+                        <i class="fa-solid fa-bars"></i>
                     </div>
+                    <div class="navbar__right"> <ul class="menu authentication">
+                        <li class="menu-item item item-1">
+                        <a class="menu_link link link-1" href="#">Login</a></li>
+                        <li class="menu-item item item-2"> </li>
+                        <a class="menu_link link link-2" href="#">Sign in</a></li>
+                        <li class="menu-item item item-3">
+                        <a class="menu_link link link-3" href="#">Sign out</a></li>
+                    </ul> </div>
                 </nav>
             </div>
         </header>
