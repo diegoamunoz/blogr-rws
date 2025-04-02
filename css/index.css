@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     /**colors*/
     --SunsetOrange: #ff5c5f ;
@@ -21,6 +23,7 @@ html {
 body {
     font-size: 1.4 rem;  
     /** 14px; */ 
+    font-family: "Inter", sans-serif;
 }
 
 .main-container {
@@ -39,13 +42,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 8rem ;
+    height: 8rem;
+
 }
 
+.logo-site {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
 .navbar__center {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+}
+
+.icon-hamburguer {
+    color: white;
+    font-size: 2.4rem;
 }
 
 .navbar__right {
@@ -77,6 +94,22 @@ body {
     text-decoration: none;
 }
 
+.btn-primary {
+    background: white;
+    border: 1px solid white;
+    color: #ff5c5f;
+}
+
+.btn-outline-primary {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid transparent;
+    color: white;
+}
+
 /**Main*/
 .main {
     flex-grow: 1;
@@ -105,14 +138,14 @@ Desktop first
 3. Las condiciones del media query deben atacar el ancho maximo (max-width)*/
 
 .container {
-    border: 2px dotted blue;
+    /* border: 2px dotted blue; */
     max-width: 96vw;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 8 px;
 }
 .container-fluid {
-    border: 2px dotted orange;
+    /* border: 2px dotted orange; */
     max-width: 100vh;
     margin: 0 auto;
     box-sizing: border-box;
@@ -132,8 +165,15 @@ Desktop first
         max-width: 72rem;
         padding: 0 2.4rem;
     }
+    .navbar__left {
+        flex-basis: 15rem;
+    }
+    .navbar__center {
+        flex-grow: 1;
+    }
     .navbar__right {
         display: block;
+        flex-basis: 15rem;
     }
     .menu-main {
     list-style: none;
