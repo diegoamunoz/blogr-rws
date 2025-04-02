@@ -117,6 +117,26 @@ body {
     height: 100vh;
 }
 
+.section-call-to-action {
+    background-color: var(--SunsetOrange);
+    display: flex;
+    height: 44rem;
+    border-radius: 0 0 0 12rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
 /**footer*/
 
 .footer {
