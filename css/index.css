@@ -24,6 +24,7 @@ body {
     font-size: 1.4 rem;  
     /** 14px; */ 
     font-family: "Inter", sans-serif;
+    text-align: center;
 }
 
 .main-container {
@@ -113,9 +114,9 @@ body {
 /**Main*/
 .main {
     flex-grow: 1;
-    max-height: 100vh;
-    height: 100vh;
 }
+
+/**Main: section call to action*/
 
 .section-call-to-action {
     background-color: var(--SunsetOrange);
@@ -136,12 +137,49 @@ body {
     color: white;
 }
 
+/**Main: section call to action*/
+
+.content-designed-for-the-future {
+    margin: 9rem 0;
+}
+
+.img-designed-for-the-future {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.content-designed-for-the-future p {
+    color: black;
+    text-align: left;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+}
+
+.section-2 {
+    width: 84% ;
+    margin: 0 auto;
+}
+
+@media ( min-width: 768px ) {
+    .content-designed-for-the-future {
+        display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+}
+}
+
+@media (min-width: 567px) {}
+
 
 /**footer*/
 
 .footer {
     background-color: var(--Gunmetal);
 }
+
 
 /**Mediaqueries*/
 
@@ -205,6 +243,9 @@ Desktop first
     }
     .icon-hamburguer {
         display: none;
+    }
+    .section-1, .section-2 {
+        flex: 1;
     }
 }
 @media (min-width: 992px ) {
