@@ -246,6 +246,38 @@ body {
 
 .footer {
     background-color: var(--Gunmetal);
+    border-radius: 0 8rem 0 0;
+    height: 76rem;
+    color: white;
+}
+
+.containerfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logofooter {
+    margin-top: 8rem;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.productfooter {
+    margin: 3rem 4rem 0rem 0rem;
+    line-height: 2.5rem;
+}
+
+.companyfooter {
+    margin: 3rem 4rem 0rem 0rem;
+    line-height: 2.5rem;
+}
+
+.connect {
+    margin: 3rem 4rem 0rem 0rem;
+    line-height: 2.5rem;
 }
 
 
@@ -416,6 +448,40 @@ Desktop first
         text-align: left;
     }
 
+    .footer {
+        background-color: var(--Gunmetal);
+        border-radius: 0 8rem 0 0;
+        height: 26rem;
+        color: white;
+    }
+
+    .containerfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 29rem;
+    }
+
+    .logofooter {
+        margin-top: -9rem;
+        margin-left: -10rem;
+    }
+
+    .productfooter {
+        margin: 5rem -10rem 0rem -9rem;
+        line-height: 2.5rem;
+    }
+
+    .companyfooter {
+        margin: 3rem -10rem 0rem 0rem;
+        line-height: 2.5rem;
+    }
+
+    .connect {
+        margin: 1rem 4rem 0rem 0rem;
+        line-height: 2.5rem;
+    }
+
 }
 
 @media (min-width: 992px ) {
@@ -423,60 +489,10 @@ Desktop first
         max-width: 98;
         padding: 0 3.2rem;
     }
-
-    .section-topics {
-        margin-top: 11rem;
-    }
-    .content-sectiontopics {
-        display: flex;
-        gap: 47rem;
-        align-items: center;
-        /* justify-content: flex-end; */
-        /* flex-direction: row; */
-    }
-
-    img.img.img-laptop-section-topics {
-        max-width: 285%;
-        width: 241%;
-        margin-left: -29rem;
-    }
-    .content-sectiontopics .section-5 {
-        text-align: left;
-        margin-right: 13rem;
-    }
-
-    .content-sectiontopics .section-5 p {
-        text-align: left;
-    }
 }
 @media (min-width: 1200px ) {
         .container {
         max-width: 114rem;
         padding: 0 4rem;
-    }
-
-    .section-topics {
-        margin-top: 11rem;
-    }
-    .content-sectiontopics {
-        display: flex;
-        gap: 47rem;
-        align-items: center;
-        /* justify-content: flex-end; */
-        /* flex-direction: row; */
-    }
-
-    img.img.img-laptop-section-topics {
-        max-width: 285%;
-        width: 241%;
-        margin-left: -29rem;
-    }
-    .content-sectiontopics .section-5 {
-        text-align: left;
-        margin-right: 13rem;
-    }
-
-    .content-sectiontopics .section-5 p {
-        text-align: left;
     }
 }
